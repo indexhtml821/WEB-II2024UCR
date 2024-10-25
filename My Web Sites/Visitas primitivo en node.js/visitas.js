@@ -3,7 +3,7 @@ const fs = require('fs');
 const url = require('url');
 const querystring = require('querystring');
 
-const hostname = '127.0.0.1';
+const hostname = '0.0.0.1';
 const port = 3000;
 
 const visitasFile = 'visitas.txt';
