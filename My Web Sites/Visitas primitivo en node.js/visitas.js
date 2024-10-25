@@ -76,6 +76,7 @@ const server = http.createServer((req, res) => {
                 // Convert the file content to HTML
                 const entries = data.toString().split('\n\n');
                 let htmlContent = '<html><body>';
+                htmlContent += '<br><a href="/">Añadir otra visita</a><br><br>';
                 entries.forEach(entry => {
                     if (entry.trim()) {
                         const lines = entry.split('\n');
