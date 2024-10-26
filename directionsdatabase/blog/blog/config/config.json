@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "root",
+    "password": ".lipextreme",
+    "database": "direcciones",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "express",
+    "password": "express",
+    "database": "express",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "express",
+    "password": "express",
+    "database": "express",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
