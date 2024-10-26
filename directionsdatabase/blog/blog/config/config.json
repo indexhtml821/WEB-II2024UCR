@@ -1,8 +1,8 @@
 {
   "development": {
-    "username": "root",
-    "password": ".lipextreme",
-    "database": "direcciones",
+    "username": "ec03640",
+    "password": "Xec03640!",
+    "database": "ci0137_ec03640",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
