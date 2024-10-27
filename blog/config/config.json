@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "ec03640",
+    "password": "Xec03640!",
+    "database": "ci0137_ec03640",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "express",
+    "password": "express",
+    "database": "express",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "express",
+    "password": "express",
+    "database": "express",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
