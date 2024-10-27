@@ -12,10 +12,10 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       // define association here
       Post.hasMany(models.Comment, {
-        foreignKey: 'postId',
+        foreignKey: 'postId'
       });
     }
-  }
+  };
   Post.init({
     title: DataTypes.STRING,
     body: DataTypes.TEXT

@@ -16,11 +16,10 @@ module.exports = (sequelize, DataTypes) => {
         onDelete: 'CASCADE'
       });
     }
-  }
+  };
   Comment.init({
     comment: DataTypes.STRING(512),
-    postId: DataTypes.INTEGER,
-  
+    postId: DataTypes.INTEGER
   }, {
     sequelize,
     modelName: 'Comment',
