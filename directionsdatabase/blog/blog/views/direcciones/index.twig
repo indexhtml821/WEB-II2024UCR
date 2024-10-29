@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+    <h1>{{ title }}</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Teléfono Casa</th>
+                <th>Dirección Casa</th>
+                <th>Teléfono Trabajo</th>
+                <th>Dirección Trabajo</th>
+                <th>Correo Electrónico</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for direccion in direcciones %}
+                <tr>
+                    <td>{{ direccion.Nombre }}</td>
+                    <td>{{ direccion.Apellidos }}</td>
+                    <td>{{ direccion.TelefonoCasa }}</td>
+                    <td>{{ direccion.DireccionCasa }}</td>
+                    <td>{{ direccion.TelefonoTrabajo }}</td>
+                    <td>{{ direccion.DireccionTrabajo }}</td>
+                    <td>{{ direccion.CorreoElectronico }}</td>
+                    <td>
+                        <a href="/direcciones/edit/{{ direccion.id }}">Editar</a>
+                        <form action="/direcciones/delete/{{ direccion.id }}" method="POST" style="display:inline;">
+                            <button type="submit">Borrar</button>
+                        </form>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <a href="/direcciones/create">Añadir Nueva Dirección</a>
+</body>
+</html>

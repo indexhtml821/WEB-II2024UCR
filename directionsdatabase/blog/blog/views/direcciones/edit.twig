@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+    <h1>{{ title }}</h1>
+    <form action="/direcciones/update/{{ direccion.id }}" method="POST">
+        <label for="Nombre">Nombre:</label>
+        <input type="text" id="Nombre" name="Nombre" value="{{ direccion.Nombre }}" required>
+
+        <label for="Apellidos">Apellidos:</label>
+        <input type="text" id="Apellidos" name="Apellidos" value="{{ direccion.Apellidos }}" required>
+
+        <label for="TelefonoCasa">Teléfono Casa:</label>
+        <input type="text" id="TelefonoCasa" name="TelefonoCasa" value="{{ direccion.TelefonoCasa }}" required>
+
+        <label for="DireccionCasa">Dirección Casa:</label>
+        <input type="text" id="DireccionCasa" name="DireccionCasa" value="{{ direccion.DireccionCasa }}" required>
+
+        <label for="TelefonoTrabajo">Teléfono Trabajo:</label>
+        <input type="text" id="TelefonoTrabajo" name="TelefonoTrabajo" value="{{ direccion.TelefonoTrabajo }}" required>
+
+        <label for="DireccionTrabajo">Dirección Trabajo:</label>
+        <input type="text" id="DireccionTrabajo" name="DireccionTrabajo" value="{{ direccion.DireccionTrabajo }}" required>
+
+        <label for="CorreoElectronico">Correo Electrónico:</label>
+        <input type="email" id="CorreoElectronico" name="CorreoElectronico" value="{{ direccion.CorreoElectronico }}" required>
+
+        <button type="submit">Actualizar Dirección</button>
+    </form>
+    <a href="/direcciones">Cancelar</a>
+</body>
+</html>

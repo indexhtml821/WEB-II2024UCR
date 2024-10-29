@@ -1,0 +1,27 @@
+{# views/direcciones/create.twig #}
+
+<h1>Añadir Nueva Dirección</h1>
+<form action="/direcciones/create" method="POST">
+  <label>Nombre:</label>
+  <input type="text" name="Nombre" required>
+
+  <label>Apellidos:</label>
+  <input type="text" name="Apellidos" required>
+
+  <label>Teléfono de la Casa:</label>
+  <input type="text" name="TelefonoCasa">
+
+  <label>Dirección de la Casa:</label>
+  <input type="text" name="DireccionCasa">
+
+  <label>Teléfono del Trabajo:</label>
+  <input type="text" name="TelefonoTrabajo">
+
+  <label>Dirección del Trabajo:</label>
+  <input type="text" name="DireccionTrabajo">
+
+  <label>Correo Electrónico:</label>
+  <input type="email" name="CorreoElectronico" required>
+
+  <button type="submit">Añadir Dirección</button>
+</form>
